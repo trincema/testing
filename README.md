@@ -1,4 +1,4 @@
-# be-testing
+# testing
 Integration testing for Apache Kafka involves validating that various components of a Kafka-based system work together as expected. Kafka is often used as a distributed messaging system, and integration testing is crucial to ensure the seamless flow of messages between producers and consumers, proper functioning of Kafka Connect, and the reliability of Kafka Streams applications. Here are some steps and considerations for Kafka integration testing:
 
 1. Setup Kafka Cluster:
