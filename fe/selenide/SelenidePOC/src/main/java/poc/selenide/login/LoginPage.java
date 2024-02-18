@@ -9,6 +9,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.SetValueOptions.withText;
 
 public class LoginPage {
 
@@ -18,8 +19,7 @@ public class LoginPage {
 
     public void login(final String username, final String password) {
         $(By.cssSelector(LoginLocators.UsernameField)).setValue(username);
-        $(By.cssSelector(LoginLocators.PasswordField)).setValue(password);
-        $(By.cssSelector(LoginLocators.PasswordField)).setValue(password);
+        $(By.cssSelector(LoginLocators.PasswordField)).setValue(withText(password).sensitive());
         $(By.cssSelector(LoginLocators.PasswordField)).shouldHave(text(LoginTestData.password), Duration.ofSeconds(5));
         PopupDialog.acceptCookies();
         $(By.cssSelector(LoginLocators.Submit)).click();

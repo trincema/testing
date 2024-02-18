@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "a1cf7614-358f-42d5-868f-d7d56f8b20c7",
+		"name": "TestCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31661894"
+	},
+	"item": [
+		{
+			"name": "Google",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.google.com?q=houses",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "houses",
+							"description": "Search for houses"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
